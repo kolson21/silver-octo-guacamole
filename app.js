@@ -1,5 +1,13 @@
 
-// Returns the export object from the module
-const log = require('./logger')
+const os = require('node:os');
 
-log('message')
+var totalMemory = os.totalmem()
+var freeMemory = os.freemem()
+
+// console.log('Total Memory: ' + totalMemory)
+
+// Template string
+// ES6 / ES2015 : ECMAScript 6
+
+console.log(`Total Memory: ${totalMemory}`)
+console.log(`Free Memory: ${freeMemory}`)
